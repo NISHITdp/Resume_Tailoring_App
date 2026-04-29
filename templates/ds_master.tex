@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (adapted for Nishit Mistry)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Job entry: company + date row, then role+stack as full-width row beneath
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+    \vspace{-3pt}
+    \begin{tabular*}{0.97\textwidth}[t]{@{}l@{}}
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Education entry: keeps right-aligned GPA
+\newcommand{\resumeEducation}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Nishit Mistry} \\ \vspace{1pt}
+    \small +1 (447) 902-7600 $|$ \href{mailto:nishitmistry07223@gmail.com}{\underline{Email}} $|$
+    \href{https://www.linkedin.com/in/nishit-mistry-b801041a1/}{\underline{LinkedIn}} $|$
+    \href{https://aquamarine-cobbler-62be1e.netlify.app}{\underline{Portfolio}} $|$
+    \href{https://starlit-treacle-57bc29.netlify.app}{\underline{Ask My AI}} $|$
+    Champaign, IL (Open to Relocation)
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducation
+      {University of Illinois Urbana-Champaign}{Aug 2024 -- May 2026}
+      {Master of Science in Information Management}{GPA: 3.89}
+    \resumeEducation
+      {University of Mumbai}{Jul 2018 -- May 2022}
+      {Bachelor of Engineering in Computer Science}{GPA: 3.77}
+  \resumeSubHeadingListEnd
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Soybean Innovation Lab -- University of Illinois Urbana-Champaign}{Jan 2026 -- Present}
+      {Data Scientist $|$ Python (pandas, scikit-learn), SQL, Power BI, GroupKFold, RAG, GPT-4o}
+      \resumeItemListStart
+        \resumeItem{Engineered soybean yield prediction and variety-ranking pipeline on 500K+ multi-country trial records using scikit-learn and \textbf{GroupKFold CV by environment}, with rankings adopted by director for client-facing fundraising decisions}
+        \resumeItem{Reframed model evaluation from RMSE to \textbf{Spearman rank correlation and Top-10 accuracy}, lifting Top-10 precision to 50\% and aligning metrics with how breeders actually select varieties}
+        \resumeItem{Architected \textbf{RAG-based decision-support tool} (Python, GPT-4o) over multi-country soybean trial data, replacing static Power BI dashboards and cutting decision time by 45 min per variety}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Intelligence Group -- University of Illinois Urbana-Champaign}{Aug 2025 -- Present}
+      {Lead Consultant, Data Science $|$ Python, Streamlit, RAG, OpenAI API, SQL, RegEx, spaCy, NLTK, OCR (Tesseract)}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{multi-layer NLP system} (regex, entity recognition, semantic parsing) to extract reimbursement rules from complex insurance contracts, validated on 80-contract sample with 90\% extraction consistency for downstream claim automation}
+        \resumeItem{Deployed billing-support \textbf{AI chatbot} (Streamlit, OpenAI API, RAG) for client's patient billing portal, translating client scoping into a working web prototype within 6-week timeline}
+        \resumeItem{\textbf{Led team of 5 consultants} across two semester-long engagements, owning client cadence, scoping docs, and milestone delivery while driving the technical NLP/RAG architecture}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sherwin-Williams}{May 2025 -- Oct 2025}
+      {Data Science Intern \& Co-op $|$ Python (spaCy, Gensim), SQL, Dataiku, Snowflake, Tableau, GPT-4o-mini}
+      \resumeItemListStart
+        \resumeItem{Streamlined end-to-end NLP analytics pipeline over 22,343 customer complaints, enabling R\&D scientists to answer recurring product/quality questions \textbf{6x faster (25 to 4 minutes)} on monthly decision cycles}
+        \resumeItem{Deployed NLP workflows including \textbf{text preprocessing, classification, LLM-based summarization}, transforming unstructured complaint text into 14 structured categories consumed directly in R\&D analysis}
+        \resumeItem{Operationalized pipeline in Dataiku with \textbf{idempotent replays} and backfilled 12 months of historical data, eliminating duplicate loads across monthly runs and securing \textbf{Data Governance production approval}}
+        \resumeItem{Delivered \textbf{2 Snowflake-backed Tableau dashboards} using curated SQL views, replacing 5-10 weekly ad-hoc R\&D analysis requests with standardized self-serve reporting}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Larsen \& Toubro Financial Services}{Jul 2022 -- Jun 2024}
+      {Assistant Manager, Data Engineering $|$ Salesforce (Flow Builder, SOQL), SQL, Apex, REST APIs, Dashboards, ETL/ELT}
+      \resumeItemListStart
+        \resumeItem{Launched \textbf{12+ Salesforce Flow journeys} (CIBIL, payments, communications, stop banking) with auto-case creation, reducing manual triage by \textbf{40\%} and improving first-touch accuracy by \textbf{20\%}}
+        \resumeItem{Coordinated \textbf{ETL/ELT} inside Salesforce (validations, transforms, case creation) on daily/weekly schedules, achieving \textbf{98\% on-time success} and cutting incident tickets by \textbf{30\%} post-launch}
+        \resumeItem{Developed internal \textbf{REST API services} for loan data and secure document retrieval (SOA/NOC/repayment schedules), reducing response time by \textbf{25\%} and eliminating ticket-based data pulls}
+        \resumeItem{Consolidated \textbf{1M+ historical rows} (7--10 years) into product/channel Salesforce dashboards keyed on loan and case ID, replacing fragile Excel exports with reliable cross-product trend analysis for wealth management insights}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Project Experience}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Pantry Lens --- Multimodal Recipe Recommender} $|$ \emph{Python, YOLO, FastAPI, React, OpenCV, GPT-4o}}{}
+          \resumeItemListStart
+            \resumeItem{Designed \textbf{YOLO (80 classes) + LLM pipeline} serving structured recipe recommendations via FastAPI in 1--2 seconds per image}
+            \resumeItem{Improved recommendation precision by \textbf{70\%} via \textbf{ingredient-level entity recognition} over generic object detection}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sentiment Analysis for Low-Resource Languages} $|$ \emph{Python, PyTorch, XLM-RoBERTa, Hugging Face, IEEE Publication 2022}}{}
+          \resumeItemListStart
+            \resumeItem{Fine-tuned XLM-RoBERTa on 7K low-resource posts (80/10/10 split) for 3-class sentiment, hitting \textbf{83.8\% accuracy}}
+            \resumeItem{Packaged \textbf{reproducible training/evaluation pipeline} with versioned datasets via Hugging Face Datasets}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Analytics}{: Python (pandas, NumPy, scikit-learn, spaCy, Gensim, PyTorch, FastAPI), SQL, R, PySpark} \\
+     \textbf{ML \& Data Science}{: Machine Learning, Regression, Classification, Clustering, NLP, LLMs/RAG (GPT-4o, OpenAI API), XGBoost, Hugging Face, A/B Testing, Causal Inference, Statistics} \\
+     \textbf{Data Platforms \& Cloud}{: Snowflake, Databricks, Dataiku, Airflow, dbt, AWS (S3, Glue, Lambda, Redshift), GCP, Azure (Data Factory, Synapse), Hadoop/Hive, Kafka, PostgreSQL, MySQL} \\
+     \textbf{BI \& Tools}{: Tableau, Power BI, Git/GitHub, JIRA, CI/CD (GitHub Actions), Linux, Advanced Excel, Salesforce}
+    }}
+ \end{itemize}
+
+\end{document}
