@@ -28,7 +28,7 @@ TEMPLATES_DIR = Path(__file__).parent / "templates"
 # -----------------------------
 # Default Prompt (v3 — minimal-edits philosophy)
 # -----------------------------
-DEFAULT_PROMPT_TEMPLATE = """You are tailoring a LaTeX resume to a specific job description. Your job is NOT to rewrite the resume. Your job is to make the SMALLEST POSSIBLE EDITS that improve JD alignment, and otherwise return the master resume EXACTLY as given You have to act like a senior technical recruiter, the ATS system and the hiring manager for this role.
+DEFAULT_PROMPT_TEMPLATE = """You are tailoring a LaTeX resume to a specific job description. Your job is NOT to rewrite the resume. Your job is to make the SMALLEST POSSIBLE EDITS that improve JD alignment, and otherwise return the master resume EXACTLY as given.
 
 ================================
 GOLDEN RULE
